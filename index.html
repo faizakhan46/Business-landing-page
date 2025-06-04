@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StellarBiz - Business Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+    header {
+      background: #0047ab;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 10px;
+    }
+    h2 {
+      color: #0047ab;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+    form button {
+      background: #0047ab;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      margin-top: 40px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to StellarBiz</h1>
+  <p>Your trusted business solution partner</p>
+  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Business Image">
+</header>
+
+<section>
+  <h2>Our Services</h2>
+  <ul>
+    <li>Digital Strategy Consulting</li>
+    <li>Web & Mobile App Design</li>
+    <li>Marketing Automation</li>
+  </ul>
+
+  <h2>Contact Us</h2>
+  <form onsubmit="sendMessage(event)">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 StellarBiz. All rights reserved.
+</footer>
+
+<script>
+function sendMessage(e) {
+  e.preventDefault();
+  alert("Thanks for contacting us, " + document.getElementById('name').value + "!");
+}
+</script>
+
+</body>
+</html>
